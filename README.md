@@ -1,5 +1,7 @@
 This is a quick node.js application calls IBM i via IBM node.js REST toolkit.
-This repository serves as the source of a simple activity to try out Eclipse Orion and 
+This repository serves as the source of a simple activity to try out Eclipse Orion and IBM Bluemix. 
+
+This will first be used at the COMMON Europe Congress 2017. http://commoneurope.sched.com/
 
 ### Activity steps ###
 1. Create or log into your IBM Bluemix account at http://console.ng.bluemix.net/ 
