@@ -3,7 +3,8 @@ This repository serves as the source of a simple activity to try out Eclipse Ori
 
 ### Activity steps ###
 1. Log into Eclipse Orion at http://embox1.demos.ibm.com:2025 using your GitHub account
-2. From the git view, clone repository ```https://github.com/ThePrez/example-njs-bluemix```
+2. From the git view, clone repository ```https://github.com/ThePrez/example-njs-bluemix``` (use default options)
+3. Configure Bluemix
 
 ### Links ###
 * 
