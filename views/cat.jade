@@ -1,0 +1,24 @@
+//- cat.jade
+//- This file defines the view of this app.
+//- [prod,cat,desc,photo,price]
+
+doctype html
+html
+  include head
+  include body
+  div.container
+    .jumbotron
+        div.small
+          table.table
+            thead
+                tr
+                    th= title
+            tbody
+            each item in items
+              tr
+                td
+                  a(href="/big?key=#{item[0]}",title="#{item[1]}")
+                    img(src="#{item[3]}")
+                td(colspan='2')=item[2]
+                td="$" + item[4]
+

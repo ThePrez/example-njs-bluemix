@@ -1,0 +1,74 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+body {
+    background-color: #80d4ff !important;
+    background-size: cover;
+    padding-top: 80px;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.125) !important;
+    /*color: white;
+    text-shadow: #444 0 2px 2px; */
+}
+
+.imgsize {
+	width: 40px;
+    height: 40px;
+    margin-top: -10.0px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.jumbotron p {
+    text-align: center;
+	font-size: 18px;
+}
+
+.jumbotron h2 {
+    font-weight: bold;
+    text-align: center;
+	font-size: 22px;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.table th {
+   text-align: center !important;   
+}
+
+meter::-webkit-meter-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.15) inset;
+  width: 200px;
+  height: 12px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #317BB9;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.15) inset;
+}
+
+
+
+

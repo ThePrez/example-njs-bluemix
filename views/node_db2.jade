@@ -1,0 +1,51 @@
+doctype html
+html
+  include head
+  link(rel="stylesheet", href="/stylesheets/circle.css")
+  include body
+  div.container
+    .jumbotron
+        .col-md-4.col-xs-12
+            h4 Disks
+            - each row, index in diskResults
+                p3= 'Disk ' + index + ': ' + parseInt(row.PERCENT_USED) + '% '
+                meter.meter(min='0', max='100', value=row.PERCENT_USED)
+                br
+        .col-md-1.col-xs-2
+        .col-md-2.col-xs-8
+            h4 CPU
+            - var p1Value = parseInt(sysInfoResults[0].MAXIMUM_CPU_UTILIZATION * 10)
+            div(class="c100 blue p"+p1Value) 
+                span=sysInfoResults[0].MAXIMUM_CPU_UTILIZATION
+                .slice
+                    .bar
+                    .fill
+        .col-md-1.col-xs-2
+        .col-md-4.col-xs-12
+            h4 System Overview
+            table.table.table-condensed
+                 tbody
+                    tr
+                      td OS
+                      td=sysResults[0].OS_NAME + ' ' + sysResults[0].OS_VERSION + '.' +  sysResults[0].OS_RELEASE
+                    tr
+                      td CPU
+                      td=sysResults[0].TOTAL_CPUS
+                    tr
+                      td Memory
+                      td=parseInt((sysResults[0].TOTAL_MEMORY) / 1024 ) + ' GB'
+                    tr
+                      td Storage
+                      td=parseInt((diskResults[0].UNIT_STORAGE_CAPACITY) / 1073741824) + ' GB'
+                    tr
+                      td System Name
+                      td=sysResults[0].HOST_NAME
+            br
+            br
+        h4 Detailed System Specifications     
+        table.table.table-condensed
+            tbody
+            - each row, title in sysInfoResults[0]
+                tr
+                    td=title
+                    td=row

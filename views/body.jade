@@ -1,0 +1,17 @@
+//- body.jade
+//- This file provides the HTML menu part.
+body
+    nav.navbar.navbar-fixed-top.navbar-inverse.m-scene
+      .container-fluid
+        .navbar-header.m-scene
+          a.navbar-brand(href='./')
+            img#logo.imgsize(alt='Logo', src='./images/logo.png')
+          button#menu.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.list-hover-slide
+            li
+              a(href='./Toolkitfori') Toolkit for i
+    
+

@@ -1,0 +1,23 @@
+//- index.jade
+//- This file defines the view of this app.
+//- [cat,dsc,pic]
+
+doctype html
+html
+  include head
+  include body
+  div.container
+    .jumbotron
+        div.small
+          table.table
+            thead
+                tr
+                    th=  title
+            tbody
+            each item in items
+              tr
+                td
+                  a(href="/cat?key=#{item[0]}",title="#{item[1]}")
+                    img(src="#{item[2]}")
+                  | &#160 #{item[1]} hat group (click photo)
+
