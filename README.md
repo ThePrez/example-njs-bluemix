@@ -14,7 +14,7 @@ This will first be used at the COMMON Europe Congress 2017. http://commoneurope.
 5. Deploy your application to Bluemix by doing the following:
     * From the edit view in orion (pencil icon on the left), go to "Create New Launch Configuration" (to be found along the top), click the plus sign. 
     * log in with your IBM Bluemix credentials (step 1)
-    * Choose "CEC-<your_surname>" as launch config name, application name, and host
+    * Choose "IBMiNode-<your_surname>" as launch config name, application name, and host... Or really, anything unique (needs to be unique for all of bluemix users in that domain)
     * click save
     * Note a new file created in the launchConfigurations directory
     * Click the "play" button along the top (next to launch configurations) to deploy application to Bluemix. This may take several minutes
@@ -25,11 +25,4 @@ This will first be used at the COMMON Europe Congress 2017. http://commoneurope.
     * From the git view, click the "sync" button
     * From the edit view, click the "play" button to redeploy your application
 
-### Links ###
-* 
-
-### Notes ###
-```
-
-```
 
