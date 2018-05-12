@@ -4,7 +4,7 @@ This repository serves as the source of a simple activity to try out Eclipse Ori
 
 ### Activity steps ###
 1. Create or log into your IBM Bluemix account at http://console.ng.bluemix.net/ 
-2. Log into Eclipse Orion at http://embox1.demos.ibm.com:2025 using your GitHub account
+2. Log into Eclipse Orion at http://www.orionhub.org using your GitHub account
 3. From the git view in Orion (git logo on the left![git icon](https://git-scm.com/favicon.ico)), clone repository ```https://github.com/ThePrez/example-njs-bluemix``` (use default options)
 4. Configure Bluemix as your cloud hosting environment by doing the following:
     * From the settings view (gear icon on the left), go to Cloud Foundry settings
